@@ -1,0 +1,28 @@
+// Fonts
+$system: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$montserrat-light: 'Montserrat-Light', -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$montserrat-bold: 'Montserrat-Bold', -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+// Fonts to use
+$body-font: $system;
+$body-font-bold: $system;
+$display-font: $system;
+$display-font-bold: $system;
+$ui-font: $system;
+
+// Breakpoints (minimum widths)
+$mobile:  			0px;
+$tablet:  			600px;
+$desktop: 			960px;
+$desktop-large: 1200px;
+$cinema:  			1800px;
+
+// Gutters & Spacing
+$gutter:                15px;
+$gutter-tablet:         30px;
+$gutter-desktop:        45px;
+$gutter-desktop-large:  $gutter-desktop;
+
+// Layout
+$site-max-width:            100%;
+$grid-max-width:            $desktop_large + 80px;
