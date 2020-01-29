@@ -5,10 +5,10 @@ $montserrat-regular: 'Montserrat-Regular', -apple-system, BlinkMacSystemFont, "H
 $montserrat-bold: 'Montserrat-Bold', -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 // Fonts to use
-$body-font: $montserrat-regular;
-$body-font-bold: $montserrat-bold;
-$display-font: $montserrat-bold;
-$display-font-bold: $montserrat-bold;
+$body-font: $system;
+$body-font-bold: $system;
+$display-font: $system;
+$display-font-bold: $system;
 $ui-font: $system;
 
 // Breakpoints (minimum widths)
