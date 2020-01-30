@@ -15,6 +15,30 @@
 		"oAP": "\/.gitignore",
 		"oF": 0
 		},
+	"\/assets\/fonts\/Matter-Regular.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/fonts\/Matter-Regular.woff",
+		"oF": 0
+		},
+	"\/assets\/fonts\/Matter-Regular.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/fonts\/Matter-Regular.woff2",
+		"oF": 0
+		},
+	"\/assets\/fonts\/Matter-SemiBold.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/fonts\/Matter-SemiBold.woff",
+		"oF": 0
+		},
+	"\/assets\/fonts\/Matter-SemiBold.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/fonts\/Matter-SemiBold.woff2",
+		"oF": 0
+		},
 	"\/assets\/fonts\/Montserrat-Bold.ttf": {
 		"ft": 8192,
 		"oA": 2,
@@ -62,6 +86,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/assets\/stylesheets\/base\/_fonts.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/stylesheets\/base\/_grid-css3.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/stylesheets\/base\/_grid-css3.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

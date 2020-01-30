@@ -1,79 +1,122 @@
 
-@mixin columns-responsive-1-2-3-4 {
-  grid-template-columns: 1fr;
-  @include media(tablet) {
-    grid-template-columns: 1fr 1fr;
-  }
-  @include media(desktop) {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  @include media(desktop-large) {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-}
+// Extremely lightweight grid by Guy Moorhouse
+// Without all the usual cruft and bloat.
+// Adapted from this by Chris Coyier — https://css-tricks.com/dont-overthink-it-grids/
 
-@mixin columns-responsive-1-2-3-3 {
-  grid-template-columns: 1fr;
-  @include media(tablet) {
-    grid-template-columns: 1fr 1fr;
-  }
-  @include media(desktop) {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
 
-.grid-constraint {
+@mixin grid($gutterless: false) {
   margin: 0 auto;
   max-width: $grid-max-width;
-  padding: 0 $gutter;
 
-  @include media(tablet) {
-    padding: 0 $gutter-tablet;
+  @if($gutterless == false) {
+    padding: 0 $gutter/2;
+
+    @include media(tablet) {
+      padding: 0 $gutter-tablet/2;
+    }
+
+    @include media(desktop) {
+      padding: 0 $gutter-desktop/2;
+    }
+
+    @include media(desktop-large) {
+      padding: 0 $gutter-desktop-large/2;
+    }
+
+  }@else{
+    padding: 0;
   }
 
-  @include media(desktop) {
-    padding: 0 $gutter-desktop;
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
   }
 
-  @include media(desktop-large) {
-    padding: 0 $gutter-desktop-large;
+  [class*='column-'],
+  .grid-column {
+  	float: left;
+
+    @if($gutterless == false) {
+      padding: 0 $gutter/2;
+
+      @include media(tablet) {
+        padding: 0 $gutter-tablet/2;
+      }
+
+      @include media(desktop) {
+        padding: 0 $gutter-desktop/2;
+      }
+
+      @include media(desktop-large) {
+        padding: 0 $gutter-desktop-large/2;
+      }
+
+    }@else{
+      padding: 0;
+    }
   }
 }
 
 .grid-container {
-  display: grid;
-  grid-gap: $gutter;
-  grid-template-columns: 1fr;
-
-  @include media(tablet) {
-    grid-gap: $gutter-tablet;
-  }
-
-  @include media(desktop) {
-    grid-gap: $gutter-desktop;
-  }
-
-  @include media(desktop-large) {
-    grid-gap: $gutter-desktop-large;
-  }
-
-  &.columns-responsive-1-2-3-3 {
-    @include columns-responsive-1-2-3-3;
-  }
-
-  &.columns-responsive-1-2-3-4 {
-    @include columns-responsive-1-2-3-4;
-  }
+  @include grid();
 }
 
-.grid-item {
-  &.is-full-width {
-    grid-column: 1/-1;
-  }
-
-  &.debug {
-    background-color: #f0f0f0;
-    padding-top: 100%;
-  }
+@mixin column-full-width {
+  width: 100%;
+}
+@mixin column-half {
+  width: 50%;
+}
+@mixin column-one-third {
+  width: 33.33%;
+}
+@mixin column-one-quarter {
+  width: 25%;
+}
+@mixin column-one-fifth {
+  width: 20%;
+}
+@mixin column-one-sixth {
+  width: 16.666667%;
+}
+@mixin column-two-thirds {
+  width: 66.66%;
+}
+@mixin column-three-quarters {
+  width: 75%;
+}
+@mixin column-two-fifths {
+  width: 40%;
+}
+@mixin column-three-fifths {
+  width: 60%;
+}
+@mixin column-four-fifths {
+  width: 80%;
 }
 
+
+.column-full-width {
+  @include column-full-width;
+}
+
+.column-one-half {
+  @include column-half;
+}
+
+.column-one-third {
+  @include column-one-third;
+}
+
+.column-two-thirds {
+  @include column-two-thirds;
+}
+
+.column-one-quarter {
+  @include column-one-quarter;
+}
+
+.column-three-quarters {
+  @include column-three-quarters;
+}

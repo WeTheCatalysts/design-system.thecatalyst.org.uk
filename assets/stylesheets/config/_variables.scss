@@ -1,15 +1,23 @@
 // Fonts
+
+// Free
 $system: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
 $montserrat-light: 'Montserrat-Light', -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
 $montserrat-regular: 'Montserrat-Regular', -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
 $montserrat-bold: 'Montserrat-Bold', -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
 
+
+// Paid
+// https://displaay.net/typeface/matter/
+$matter-regular: 'Matter-Regular', -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$matter-semi-bold: 'Matter-SemiBold', -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
 // Fonts to use
-$body-font: $system;
-$body-font-bold: $system;
-$display-font: $system;
-$display-font-bold: $system;
-$ui-font: $system;
+$body-font: $matter-regular;
+$body-font-bold: $matter-semi-bold;
+$display-font: $matter-regular;
+$display-font-bold: $matter-semi-bold;
+$ui-font: $matter-semi-bold;
 
 // Breakpoints (minimum widths)
 $mobile:  			0px;
