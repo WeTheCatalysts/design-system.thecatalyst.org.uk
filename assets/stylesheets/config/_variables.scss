@@ -5,7 +5,10 @@ $system: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, 
 $montserrat-light: 'Montserrat-Light', -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
 $montserrat-regular: 'Montserrat-Regular', -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
 $montserrat-bold: 'Montserrat-Bold', -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
-
+$questrial-regular: 'Questrial-Regular', -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$roboto-regular: 'Roboto-Regular', -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$roboto-medium: 'Roboto-Medium', -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$lexenddeca-regular: 'LexendDeca-Regular', -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 // Paid
 // https://displaay.net/typeface/matter/
@@ -13,11 +16,11 @@ $matter-regular: 'Matter-Regular', -apple-system, BlinkMacSystemFont, "Helvetica
 $matter-semi-bold: 'Matter-SemiBold', -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 // Fonts to use
-$body-font: $matter-regular;
-$body-font-bold: $matter-semi-bold;
-$display-font: $matter-regular;
-$display-font-bold: $matter-semi-bold;
-$ui-font: $matter-semi-bold;
+$body-font: $roboto-regular;
+$body-font-bold: $roboto-medium;
+$display-font: $lexenddeca-regular;
+$display-font-bold: $lexenddeca-regular;
+$ui-font: $roboto-medium;
 
 // Breakpoints (minimum widths)
 $mobile:  			0px;

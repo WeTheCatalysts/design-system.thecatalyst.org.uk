@@ -156,11 +156,35 @@ table {
   font-style: normal;
   src: url("../fonts/Matter-SemiBold.woff2") format("woff2"), url("../fonts/Matter-SemiBold.woff") format("woff"); }
 
+@font-face {
+  font-family: 'Questrial-Regular';
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Questrial-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Roboto-Regular';
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Roboto-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Roboto-Medium';
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Roboto-Medium.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'LexendDeca-Regular';
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/LexendDeca-Regular.ttf") format("truetype"); }
+
 body {
   font-size: 16px;
   line-height: 20px;
   color: #0a0039;
-  font-family: "Matter-Regular", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto-Regular", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0; }
   @media screen and (min-width: 600px) {
     body {
@@ -236,7 +260,7 @@ body {
   font-feature-settings: "salt" on;
   font-size: 24px;
   line-height: 30px;
-  font-family: "Matter-Regular", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "LexendDeca-Regular", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 0; }
   @media screen and (min-width: 600px) {
     .heading-small {
@@ -247,43 +271,46 @@ body {
   font-feature-settings: "salt" on;
   font-size: 27px;
   line-height: 30px;
-  font-family: "Matter-Regular", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "LexendDeca-Regular", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-left: -1px;
   margin-bottom: 0; }
   @media screen and (min-width: 600px) {
     .heading-medium {
       font-size: 36px;
-      line-height: 40px; } }
+      line-height: 40px;
+      letter-spacing: -0.006125em; } }
 
 .heading-large {
   font-feature-settings: "salt" on;
   font-size: 36px;
   line-height: 40px;
-  font-family: "Matter-Regular", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "LexendDeca-Regular", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-left: -2px;
   margin-bottom: 0; }
   @media screen and (min-width: 600px) {
     .heading-large {
       font-size: 48px;
-      line-height: 50px; } }
+      line-height: 50px;
+      letter-spacing: -0.0125em; } }
 
 .heading-extra-large {
   font-feature-settings: "salt" on;
   font-size: 48px;
   line-height: 50px;
-  font-family: "Matter-Regular", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "LexendDeca-Regular", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-left: -4px;
   margin-bottom: 0;
   max-width: 960px; }
   @media screen and (min-width: 600px) {
     .heading-extra-large {
       font-size: 80px;
-      line-height: 80px; } }
+      line-height: 80px;
+      letter-spacing: -0.025em; } }
 
 .ui-copy {
   font-size: 14px;
   line-height: 20px;
-  font-family: "Matter-SemiBold", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "LexendDeca-Regular", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px; }
 
@@ -294,12 +321,13 @@ h1 {
   font-feature-settings: "salt" on;
   font-size: 36px;
   line-height: 40px;
-  font-family: "Matter-Regular", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "LexendDeca-Regular", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 0.5em; }
   @media screen and (min-width: 600px) {
     h1 {
       font-size: 48px;
-      line-height: 50px; } }
+      line-height: 50px;
+      letter-spacing: -0.0125em; } }
   h1.extra-large {
     font-feature-settings: "salt" on;
     font-size: 48px;
@@ -307,24 +335,26 @@ h1 {
     @media screen and (min-width: 600px) {
       h1.extra-large {
         font-size: 80px;
-        line-height: 80px; } }
+        line-height: 80px;
+        letter-spacing: -0.025em; } }
 
 h2 {
   font-feature-settings: "salt" on;
   font-size: 27px;
   line-height: 30px;
-  font-family: "Matter-Regular", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "LexendDeca-Regular", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 1em; }
   @media screen and (min-width: 600px) {
     h2 {
       font-size: 36px;
-      line-height: 40px; } }
+      line-height: 40px;
+      letter-spacing: -0.006125em; } }
 
 h3 {
   font-feature-settings: "salt" on;
   font-size: 24px;
   line-height: 30px;
-  font-family: "Matter-Regular", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "LexendDeca-Regular", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 0.5em; }
   @media screen and (min-width: 600px) {
     h3 {

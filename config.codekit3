@@ -15,46 +15,28 @@
 		"oAP": "\/.gitignore",
 		"oF": 0
 		},
-	"\/assets\/fonts\/Matter-Regular.woff": {
+	"\/assets\/fonts\/LexendDeca-Regular.ttf": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/assets\/fonts\/Matter-Regular.woff",
+		"oAP": "\/assets\/fonts\/LexendDeca-Regular.ttf",
 		"oF": 0
 		},
-	"\/assets\/fonts\/Matter-Regular.woff2": {
+	"\/assets\/fonts\/Questrial-Regular.ttf": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/assets\/fonts\/Matter-Regular.woff2",
+		"oAP": "\/assets\/fonts\/Questrial-Regular.ttf",
 		"oF": 0
 		},
-	"\/assets\/fonts\/Matter-SemiBold.woff": {
+	"\/assets\/fonts\/Roboto-Medium.ttf": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/assets\/fonts\/Matter-SemiBold.woff",
+		"oAP": "\/assets\/fonts\/Roboto-Medium.ttf",
 		"oF": 0
 		},
-	"\/assets\/fonts\/Matter-SemiBold.woff2": {
+	"\/assets\/fonts\/Roboto-Regular.ttf": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/assets\/fonts\/Matter-SemiBold.woff2",
-		"oF": 0
-		},
-	"\/assets\/fonts\/Montserrat-Bold.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/assets\/fonts\/Montserrat-Bold.ttf",
-		"oF": 0
-		},
-	"\/assets\/fonts\/Montserrat-Light.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/assets\/fonts\/Montserrat-Light.ttf",
-		"oF": 0
-		},
-	"\/assets\/fonts\/Montserrat-Regular.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/assets\/fonts\/Montserrat-Regular.ttf",
+		"oAP": "\/assets\/fonts\/Roboto-Regular.ttf",
 		"oF": 0
 		},
 	"\/assets\/images\/CAT_logo_cent_black .svg": {
@@ -220,6 +202,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/index.php",
+		"oF": 0
+		},
+	"\/one-pager.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/one-pager.html",
 		"oF": 0
 		}
 	},

@@ -65,6 +65,7 @@ $line-height-80:  80px;
   @include media(tablet) {
     font-size: $type-size-36;
     line-height: $line-height-36;
+    letter-spacing: -0.006125em;
   }
 }
 
@@ -75,6 +76,7 @@ $line-height-80:  80px;
   @include media(tablet) {
     font-size: $type-size-48;
     line-height: $line-height-48;
+    letter-spacing: -0.0125em;
   }
 }
 
@@ -85,6 +87,7 @@ $line-height-80:  80px;
   @include media(tablet) {
     font-size: $type-size-80;
     line-height: $line-height-80;
+    letter-spacing: -0.025em;
   }
 }
 
