@@ -24,9 +24,9 @@ body {
 }
 
 .header {
-  padding: 10px 0;
-  margin-bottom: 2em;
-  max-height: 60px;
+  padding: 15px 0;
+  border-bottom: 10px solid $pink;
+  max-height: 90px;
   background-color: $brand-navy;
 }
 
@@ -104,7 +104,7 @@ body {
   font-family: $display-font;
   margin-left: -4px;
   margin-bottom: 0;
-  max-width: 960px;
+  max-width: 800px;
 }
 
 .ui-copy {
@@ -139,7 +139,7 @@ h3 {
   @include heading-small;
   font-family: $display-font;
   margin-bottom: 0.5em;
-}
+} 
 
 p {
   @include body-copy-medium;
@@ -161,6 +161,10 @@ a {
   text-decoration: underline;
 }
 
+img {
+  width: 100%;
+}
+
 .small {
   @include body-copy-small;
 }
@@ -173,14 +177,34 @@ a {
   margin-bottom: $gutter * 8;
 }
 .proto-spacer {
-  margin-bottom: $gutter-desktop;
+  margin-bottom: $gutter * 2;
+  @include media(desktop) {
+    margin-bottom: $gutter-desktop;
+  }
+
+  &.space-by-0-5 {
+    margin-bottom: $gutter;
+    @include media(desktop) {
+      margin-bottom: $gutter-desktop * 0.5;
+    }
+  }
+  &.space-by-2 {
+    margin-bottom: $gutter * 3;
+    @include media(desktop) {
+      margin-bottom: $gutter-desktop * 2;
+    }
+  }
 }
 .proto-background {
-  min-height: 250px;
-  padding: $gutter;
+  min-height: 140px;
+  // padding: $gutter;
   background-color: #f5f5f5;
 
   &.tall {
     min-height: 500px;
   }
+}
+
+.border-bottom {
+  //border-bottom: 2px solid #dedede;
 }
