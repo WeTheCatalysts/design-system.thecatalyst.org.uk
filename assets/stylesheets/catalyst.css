@@ -11,7 +11,7 @@
   background-color: #ffe8b4; }
 
 .color-5 {
-  background-color: #07ca78; }
+  background-color: #09CA77; }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0b1 | 201101 
@@ -184,7 +184,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: #0a0039;
-  font-family: "Roboto-Regular", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "LexendDeca-Regular", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0; }
   @media screen and (min-width: 600px) {
     body {
@@ -197,7 +197,7 @@ body {
 
 .header {
   padding: 15px 0;
-  border-bottom: 10px solid #ee7abb;
+  border-bottom: 10px solid #09CA77;
   max-height: 90px;
   background-color: #0a0039; }
 
