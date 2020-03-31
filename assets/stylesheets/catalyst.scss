@@ -108,7 +108,7 @@ body {
 }
 
 .ui-copy {
-  @include ui-copy-small;
+  @include ui-copy;
   font-family: $display-font-bold;
   text-transform: uppercase;
   letter-spacing: 1px;

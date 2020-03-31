@@ -1,24 +1,21 @@
 
-// $em: 19px;
-// $type-scale: 1.414;
-
 // Type Scale (nabbed from GDS)
 $type-size-14:    14px;
-$line-height-14:  20px;
+$line-height-14:  24px;
 $type-size-16:    16px;
-$line-height-16:  20px;
-$type-size-19:    19px;
-$line-height-19:  25px;
+$line-height-16:  22px;
+$type-size-18:    18px;
+$line-height-18:  27px;
 $type-size-24:    24px;
-$line-height-24:  30px;
+$line-height-24:  34px;
 $type-size-27:    27px;
 $line-height-27:  30px;
 $type-size-36:    36px;
 $line-height-36:  40px;
 $type-size-48:    48px;
 $line-height-48:  50px;
-$type-size-80:    72px;
-$line-height-80:  82px;
+$type-size-72:    72px;
+$line-height-72:  82px;
 
 
 @mixin body-copy-small {
@@ -34,14 +31,14 @@ $line-height-80:  82px;
   font-size: $type-size-16;
   line-height: $line-height-16;
   @include media(tablet) {
-    font-size: $type-size-19;
-    line-height: $line-height-19;
+    font-size: $type-size-18;
+    line-height: $line-height-18;
   }
 }
 
 @mixin body-copy-large {
-  font-size: $type-size-19;
-  line-height: $line-height-19;
+  font-size: $type-size-18;
+  line-height: $line-height-18;
   @include media(tablet) {
     font-size: $type-size-24;
     line-height: $line-height-24;
@@ -93,12 +90,15 @@ $line-height-80:  82px;
   }
 
   @include media(desktop) {
-    font-size: $type-size-80;
-    line-height: $line-height-80;
+    font-size: $type-size-72;
+    line-height: $line-height-72;
   }
 }
 
-@mixin ui-copy-small {
+@mixin ui-copy {
+  //@include body-copy-small;
   font-size: $type-size-14;
   line-height: $line-height-14;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
