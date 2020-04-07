@@ -283,6 +283,12 @@
 		"oA": 2,
 		"oAP": "\/one-pager.html",
 		"oF": 0
+		},
+	"\/pipeline.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/pipeline.html",
+		"oF": 0
 		}
 	},
 "hooks": [
