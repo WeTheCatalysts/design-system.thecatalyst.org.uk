@@ -1,26 +1,35 @@
 
-// Whites, blacks & greys
+// whites, blacks & greys
 $white: #fff;
 $off-white: #f5f5f5;
 $off-black: #121212;
 $brand-navy: #0a0039;
+$mid-grey: #9A9A9A;
 
-$red: #ff5c5c;
-$pink: #ee7abb;
-$turquoise: #22cae1;
-$yellow: #ffe8b4;
-$green: #09CA77;
+// brand colours
+$brand-red: #ff5c5c;
+$brand-pink: #ee7abb;
+$brand-turquoise: #22cae1;
+$brand-yellow: #ffe8b4;
+$brand-green: #09CA77;
+
+// functional colours
+$green: #019B59;
+
+// active/inactive
+$active-state: $green;
+$inactive-state: $mid-grey;
 
 // phase banners
 $alpha: #E34096;
 $beta: #DF6300;
 $discovery: #0C9DEF;
 $idea: rgba($discovery, 0.25);
-$live: #019B59;
+$live: $green;
 $scoping: rgba($discovery, 0.5);
 
-.color-1 { background-color:$red; }
-.color-2 { background-color:$pink; }
-.color-3 { background-color:$turquoise; }
-.color-4 { background-color:$yellow; }
-.color-5 { background-color:$green; }
+.color-1 { background-color:$brand-red; }
+.color-2 { background-color:$brand-pink; }
+.color-3 { background-color:$brand-turquoise; }
+.color-4 { background-color:$brand-yellow; }
+.color-5 { background-color:$brand-green; }

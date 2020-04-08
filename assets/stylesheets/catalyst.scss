@@ -26,7 +26,7 @@ body {
 
 .header {
   padding: 15px 0;
-  border-bottom: 10px solid $green;
+  border-bottom: 10px solid $brand-green;
   max-height: 90px;
   background-color: $brand-navy;
 }
@@ -264,5 +264,37 @@ img {
 
   a {
     text-decoration: none;
+  }
+}
+
+.state-label {
+  @include body-copy-small;
+  display: block;
+  margin-left: 16px;
+
+  &:before {
+    content:'';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    position: relative;
+    top: 16px;
+    left: -16px;
+  }
+
+  &.active {
+    &:before {
+      background-color: $active-state;
+    }
+  }
+
+  &.inactive {
+    &:before {
+      background-color: white;
+      border: 1px solid $inactive-state;
+      width: 8px;
+      height: 8px;
+    }
   }
 }

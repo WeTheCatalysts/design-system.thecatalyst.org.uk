@@ -96,7 +96,6 @@ $line-height-72:  82px;
 }
 
 @mixin ui-copy {
-  //@include body-copy-small;
   font-size: $type-size-14;
   line-height: $line-height-14;
   text-transform: uppercase;
