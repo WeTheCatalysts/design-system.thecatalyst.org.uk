@@ -102,3 +102,9 @@ $line-height-72:  82px;
   text-transform: uppercase;
   letter-spacing: 3px;
 }
+
+@mixin phase-label-copy {
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}

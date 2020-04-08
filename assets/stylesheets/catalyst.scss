@@ -16,6 +16,7 @@ body {
   color: $brand-navy;
   font-family: $body-font;
   margin: 0;
+  overflow-y: scroll;
 }
 
 .logo {
@@ -28,6 +29,10 @@ body {
   border-bottom: 10px solid $green;
   max-height: 90px;
   background-color: $brand-navy;
+}
+
+.main {
+  min-height: 700px;
 }
 
 .footer {
@@ -197,7 +202,6 @@ img {
 }
 .proto-background {
   min-height: 140px;
-  // padding: $gutter;
   background-color: #f5f5f5;
 
   &.tall {
@@ -205,6 +209,60 @@ img {
   }
 }
 
-.border-bottom {
-  //border-bottom: 2px solid #dedede;
+.proto-pipeline-phase {
+
+  @include column-half;
+  margin-bottom: $gutter;
+  
+  @include media(tablet) {
+    @include column-one-third;
+    margin-bottom: $gutter-tablet;
+  }
+
+  @include media(desktop) {
+    @include column-one-sixth;
+    margin-bottom: $gutter-desktop;
+  }
+}
+
+.phase-title {
+  @include body-copy-medium;
+  display: inline-block;
+  width: 100%;
+  border-top: 10px solid $alpha;
+  padding-top: 5px;
+
+  &.is-alpha {
+    border-color: $alpha;
+  }
+
+  &.is-beta {
+    border-color: $beta;
+  }
+
+  &.is-discovery {
+    border-color: $discovery;
+  }
+
+  &.is-idea {
+    border-color: $idea;
+  }
+  
+  &.is-live {
+    border-color: $live;
+  }
+
+  &.is-scoping {
+    border-color: $scoping;
+  }
+}
+
+.phase-count {
+  display: inline-block;
+  margin-left: 1px;
+  width: 100%;
+
+  a {
+    text-decoration: none;
+  }
 }

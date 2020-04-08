@@ -11,6 +11,14 @@ $turquoise: #22cae1;
 $yellow: #ffe8b4;
 $green: #09CA77;
 
+// phase banners
+$alpha: #E34096;
+$beta: #DF6300;
+$discovery: #0C9DEF;
+$idea: rgba($discovery, 0.25);
+$live: #019B59;
+$scoping: rgba($discovery, 0.5);
+
 .color-1 { background-color:$red; }
 .color-2 { background-color:$pink; }
 .color-3 { background-color:$turquoise; }

@@ -126,11 +126,8 @@ table {
 .column-three-quarters {
   width: 75%; }
 
-@font-face {
-  font-family: 'Roboto-Medium';
-  font-weight: 400;
-  font-style: normal;
-  src: url("../fonts/Roboto-Medium.ttf") format("truetype"); }
+.column-one-sixth {
+  width: 16.666667%; }
 
 @font-face {
   font-family: 'LexendDeca-Regular';
@@ -144,12 +141,19 @@ table {
   font-style: normal;
   src: url("../fonts/Inter-Regular-slnt=0.ttf") format("truetype"); }
 
+@font-face {
+  font-family: 'Inter-Semi-Bold';
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Inter-SemiBold-slnt=0.ttf") format("truetype"); }
+
 body {
   font-size: 16px;
   line-height: 22px;
   color: #0a0039;
   font-family: "Inter-Regular", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin: 0; }
+  margin: 0;
+  overflow-y: scroll; }
   @media screen and (min-width: 600px) {
     body {
       font-size: 18px;
@@ -164,6 +168,9 @@ body {
   border-bottom: 10px solid #09CA77;
   max-height: 90px;
   background-color: #0a0039; }
+
+.main {
+  min-height: 700px; }
 
 .footer {
   padding: 30px 0;
@@ -392,3 +399,46 @@ img {
   background-color: #f5f5f5; }
   .proto-background.tall {
     min-height: 500px; }
+
+.proto-pipeline-phase {
+  width: 50%;
+  margin-bottom: 15px; }
+  @media screen and (min-width: 600px) {
+    .proto-pipeline-phase {
+      width: 33.33%;
+      margin-bottom: 30px; } }
+  @media screen and (min-width: 960px) {
+    .proto-pipeline-phase {
+      width: 16.666667%;
+      margin-bottom: 45px; } }
+
+.phase-title {
+  font-size: 16px;
+  line-height: 22px;
+  display: inline-block;
+  width: 100%;
+  border-top: 10px solid #E34096;
+  padding-top: 5px; }
+  @media screen and (min-width: 600px) {
+    .phase-title {
+      font-size: 18px;
+      line-height: 27px; } }
+  .phase-title.is-alpha {
+    border-color: #E34096; }
+  .phase-title.is-beta {
+    border-color: #DF6300; }
+  .phase-title.is-discovery {
+    border-color: #0C9DEF; }
+  .phase-title.is-idea {
+    border-color: rgba(12, 157, 239, 0.25); }
+  .phase-title.is-live {
+    border-color: #019B59; }
+  .phase-title.is-scoping {
+    border-color: rgba(12, 157, 239, 0.5); }
+
+.phase-count {
+  display: inline-block;
+  margin-left: 1px;
+  width: 100%; }
+  .phase-count a {
+    text-decoration: none; }

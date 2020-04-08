@@ -1,23 +1,15 @@
 // Fonts
-
-// Free
-// $system: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
-// $montserrat-light: 'Montserrat-Light', -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
-// $montserrat-regular: 'Montserrat-Regular', -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
-// $montserrat-bold: 'Montserrat-Bold', -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
-// $questrial-regular: 'Questrial-Regular', -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
-// $roboto-regular: 'Roboto-Regular', -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
-$roboto-medium: 'Roboto-Medium', -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
 $inter-regular: 'Inter-Regular', -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$inter-semi-bold: 'Inter-Semi-Bold', -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
 $lexenddeca-regular: 'LexendDeca-Regular', -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 
 // Fonts to use
 $body-font: $inter-regular;
-$body-font-bold: $lexenddeca-regular;//$roboto-medium;
+$body-font-bold: $inter-semi-bold;
 $display-font: $lexenddeca-regular;
 $display-font-bold: $lexenddeca-regular;
-$ui-font: $roboto-medium;
+$ui-font: $lexenddeca-regular;
 
 // Breakpoints (minimum widths)
 $mobile:  			0px;
