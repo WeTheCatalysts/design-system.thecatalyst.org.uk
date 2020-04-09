@@ -217,6 +217,16 @@ a.button,
   .phase-label.is-beta {
     color: #fff;
     background-color: #DF6300; }
+  .phase-label.is-discovery {
+    color: #fff;
+    background-color: #0C9DEF; }
+  .phase-label.is-idea {
+    background-color: rgba(12, 157, 239, 0.25); }
+  .phase-label.is-live {
+    color: #fff;
+    background-color: #019B59; }
+  .phase-label.is-scoping {
+    background-color: rgba(12, 157, 239, 0.5); }
 
 body {
   font-size: 16px;
@@ -467,6 +477,13 @@ img {
 
 .pipeline-item {
   position: relative; }
+  .pipeline-item .phase-label {
+    position: absolute;
+    right: 0;
+    top: 4px; }
+    @media screen and (min-width: 960px) {
+      .pipeline-item .phase-label {
+        top: 8px; } }
 
 .vertical-spacing-bottom-0-25 {
   margin-bottom: 7.5px; }

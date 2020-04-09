@@ -16,4 +16,22 @@
     color: $white;
     background-color: $beta;
   }
+
+  &.is-discovery {
+    color: $white;
+    background-color: $discovery;
+  }
+
+  &.is-idea {
+    background-color: $idea;
+  }
+  
+  &.is-live {
+    color: $white;
+    background-color: $live;
+  }
+
+  &.is-scoping {
+    background-color: $scoping;
+  }
 }

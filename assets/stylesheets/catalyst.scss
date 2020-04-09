@@ -210,6 +210,16 @@ img {
 
 .pipeline-item {
   position: relative;
+
+  .phase-label {
+    position: absolute;
+    right: 0;
+    top: 4px;
+
+    @include media(desktop) {
+      top: 8px;
+    }
+  }
 }
 
 
