@@ -7,9 +7,14 @@
 @import 'base/_reset.scss';
 @import 'base/_media-queries';
 @import 'base/_grid.scss';
+@import 'base/_helpers.scss';
 @import 'base/_fonts.scss';
 @import 'base/_typography.scss';
 
+// components
+@import 'components/button.scss';
+@import 'components/phase-banner.scss';
+@import 'components/phase-label.scss';
 
 body {
   @include body-copy-medium;
@@ -24,10 +29,20 @@ body {
   height: 40px;
 }
 
+.header-logo {
+  position: absolute;
+  top: 20px;
+  .logo {
+    height: 24px;
+  }
+}
+
 .header {
-  padding: 15px 0;
+  width: 100%;
+  height: 70px;
+  top: 0;
+  z-index: 99;
   border-bottom: 10px solid $brand-green;
-  max-height: 90px;
   background-color: $brand-navy;
 }
 
@@ -38,7 +53,6 @@ body {
 .footer {
   padding: 30px 0;
   margin-top: 2em;
-  min-height: 240px;
   background-color: $off-white
 }
 
@@ -164,6 +178,14 @@ ul ul {
 a {
   color: $brand-navy;
   text-decoration: underline;
+
+  &.no-underline {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 img {
@@ -172,6 +194,68 @@ img {
 
 .small {
   @include body-copy-small;
+}
+
+.bottom-border {
+  border-bottom: 1px solid $brand-navy-10;
+}
+
+.top-border {
+  border-top: 1px solid $brand-navy-10;
+}
+
+.bottom-border-2 {
+  border-bottom: 2px solid $brand-navy-10;
+}
+
+.pipeline-item {
+  position: relative;
+}
+
+
+// vertical spacing - bottom
+
+.vertical-spacing-bottom-0-25 {
+  @include vertical-gutter-behaviour($direction: 'bottom', $gutter-count-mobile: 0.5, $gutter-count-tablet: 0.5, $gutter-count-desktop: 0.25, $gutter-count-desktop-large: 0.25, $gutter-count-cinema: 0.25);
+}
+
+.vertical-spacing-bottom-0-5 {
+  @include vertical-gutter-behaviour($direction: 'bottom', $gutter-count-mobile: 1, $gutter-count-tablet: 1, $gutter-count-desktop: 0.5, $gutter-count-desktop-large: 0.5, $gutter-count-cinema: 0.5);
+}
+
+.vertical-spacing-bottom {
+  @include vertical-gutter-behaviour($direction: 'bottom', $gutter-count-mobile: 2, $gutter-count-tablet: 2, $gutter-count-desktop: 1, $gutter-count-desktop-large: 1, $gutter-count-cinema: 1);
+}
+
+.vertical-spacing-bottom-2 {
+  @include vertical-gutter-behaviour($direction: 'bottom', $gutter-count-mobile: 4, $gutter-count-tablet: 4, $gutter-count-desktop: 2, $gutter-count-desktop-large: 2, $gutter-count-cinema: 2);
+}
+
+.vertical-spacing-bottom-3 {
+  @include vertical-gutter-behaviour($direction: 'bottom', $gutter-count-mobile: 6, $gutter-count-tablet: 6, $gutter-count-desktop: 3, $gutter-count-desktop-large: 3, $gutter-count-cinema: 3);
+}
+
+.vertical-spacing-bottom-4 {
+  @include vertical-gutter-behaviour($direction: 'bottom', $gutter-count-mobile: 8, $gutter-count-tablet: 8, $gutter-count-desktop: 4, $gutter-count-desktop-large: 4, $gutter-count-cinema: 4);
+}
+
+
+// vertical spacing - top
+
+.vertical-spacing-top-0-25 {
+  @include vertical-gutter-behaviour($direction: 'top', $gutter-count-mobile: 0.5, $gutter-count-tablet: 0.5, $gutter-count-desktop: 0.25, $gutter-count-desktop-large: 0.25, $gutter-count-cinema: 0.25);
+}
+
+.vertical-spacing-top-0-5 {
+  @include vertical-gutter-behaviour($direction: 'top', $gutter-count-mobile: 1, $gutter-count-tablet: 1, $gutter-count-desktop: 0.5, $gutter-count-desktop-large: 0.5, $gutter-count-cinema: 0.5);
+}
+
+.vertical-spacing-top {
+  @include vertical-gutter-behaviour($direction: 'top', $gutter-count-mobile: 2, $gutter-count-tablet: 2, $gutter-count-desktop: 1, $gutter-count-desktop-large: 1, $gutter-count-cinema: 1);
+}
+
+.vertical-spacing-top-2 {
+  @include vertical-gutter-behaviour($direction: 'top', $gutter-count-mobile: 4, $gutter-count-tablet: 4, $gutter-count-desktop: 2, $gutter-count-desktop-large: 2, $gutter-count-cinema: 2);
 }
 
 // .proto-* classes only used to layout things in this styles prototype.

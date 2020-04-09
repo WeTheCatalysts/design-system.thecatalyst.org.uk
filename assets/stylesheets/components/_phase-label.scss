@@ -1,0 +1,19 @@
+.phase-label {
+  @include phase-label-copy;
+  font-family: $body-font-bold;
+  line-height: 24px;
+  height: 24px;
+  display: inline-block;
+  padding: 0 12px;
+  text-align: center;
+
+  &.is-alpha {
+    color: $white;
+    background-color: $alpha;
+  }
+
+  &.is-beta {
+    color: $white;
+    background-color: $beta;
+  }
+}
