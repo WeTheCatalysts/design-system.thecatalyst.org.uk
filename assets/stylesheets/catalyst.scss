@@ -1,394 +1,399 @@
 
-// config
-@import 'config/_colours.scss';
-@import 'config/_variables.scss';
+// Import core styles from Catalyst static
+@import '../../../static.thecatalyst.org.uk/source/catalyst';
 
-// base
-@import 'base/_reset.scss';
-@import 'base/_media-queries';
-@import 'base/_grid.scss';
-@import 'base/_helpers.scss';
-@import 'base/_fonts.scss';
-@import 'base/_typography.scss';
+// (all styles now reside in static, this app is just to present them)
 
-// components
-@import 'components/button.scss';
-@import 'components/phase-banner.scss';
-@import 'components/phase-label.scss';
+// // config
+// @import 'config/_colours.scss';
+// @import 'config/_variables.scss';
 
-body {
-  @include body-copy-medium;
-  color: $brand-navy;
-  font-family: $body-font;
-  margin: 0;
-  overflow-y: scroll;
-}
+// // base
+// @import 'base/_reset.scss';
+// @import 'base/_media-queries';
+// @import 'base/_grid.scss';
+// @import 'base/_helpers.scss';
+// @import 'base/_fonts.scss';
+// @import 'base/_typography.scss';
 
-.logo {
-  display: block;
-  height: 40px;
-}
+// // components
+// @import 'components/button.scss';
+// @import 'components/phase-banner.scss';
+// @import 'components/phase-label.scss';
 
-.header-logo {
-  position: absolute;
-  top: 20px;
-  .logo {
-    height: 24px;
-  }
-}
+// body {
+//   @include body-copy-medium;
+//   color: $brand-navy;
+//   font-family: $body-font;
+//   margin: 0;
+//   overflow-y: scroll;
+// }
 
-.header {
-  width: 100%;
-  height: 70px;
-  top: 0;
-  z-index: 99;
-  border-bottom: 10px solid $brand-green;
-  background-color: $brand-navy;
-}
+// .logo {
+//   display: block;
+//   height: 40px;
+// }
 
-.main {
-  min-height: 700px;
-}
+// .header-logo {
+//   position: absolute;
+//   top: 20px;
+//   .logo {
+//     height: 24px;
+//   }
+// }
 
-.footer {
-  padding: 30px 0;
-  margin-top: 2em;
-  background-color: $off-white
-}
+// .header {
+//   width: 100%;
+//   height: 70px;
+//   top: 0;
+//   z-index: 99;
+//   border-bottom: 10px solid $brand-green;
+//   background-color: $brand-navy;
+// }
 
-.type,
-.colors{
-  display: inline-block;
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
+// .main {
+//   min-height: 700px;
+// }
 
-.type p {
-  margin-bottom: $gutter;
-}
+// .footer {
+//   padding: 30px 0;
+//   margin-top: 2em;
+//   background-color: $off-white
+// }
 
-.color-swatch {
-  border-radius: 50%;
-  display: block;
-  float: left;
+// .type,
+// .colors{
+//   display: inline-block;
+//   margin-top: 40px;
+//   margin-bottom: 40px;
+// }
 
-  width: 44px;
-  height: 44px;
-  margin-right: 11px;
+// .type p {
+//   margin-bottom: $gutter;
+// }
 
-  @include media(desktop) {
-    height: 88px;
-    width: 88px;
-    margin-right: 22px;
-  }
-}
+// .color-swatch {
+//   border-radius: 50%;
+//   display: block;
+//   float: left;
 
-.body-copy-small {
-  @include body-copy-small;
-  margin-bottom: 0;
-}
+//   width: 44px;
+//   height: 44px;
+//   margin-right: 11px;
 
-.body-copy-medium {
-  @include body-copy-medium;
-  margin-bottom: 0;
-}
+//   @include media(desktop) {
+//     height: 88px;
+//     width: 88px;
+//     margin-right: 22px;
+//   }
+// }
 
-.body-copy-large {
-  @include body-copy-large;
-  margin-bottom: 0;
-}
+// .body-copy-small {
+//   @include body-copy-small;
+//   margin-bottom: 0;
+// }
 
-.heading-small {
-  @include heading-small;
-  font-family: $display-font;
-  margin-bottom: 0;
-}
+// .body-copy-medium {
+//   @include body-copy-medium;
+//   margin-bottom: 0;
+// }
 
-.heading-medium {
-  @include heading-medium;
-  font-family: $display-font;
-  margin-left: -1px;
-  margin-bottom: 0;
-}
+// .body-copy-large {
+//   @include body-copy-large;
+//   margin-bottom: 0;
+// }
 
-.heading-large {
-  @include heading-large;
-  font-family: $display-font;
-  margin-left: -2px;
-  margin-bottom: 0;
-}
+// .heading-small {
+//   @include heading-small;
+//   font-family: $display-font;
+//   margin-bottom: 0;
+// }
 
-.heading-extra-large {
-  @include heading-extra-large;
-  font-family: $display-font;
-  margin-left: -4px;
-  margin-bottom: 0;
-  max-width: 800px;
-}
+// .heading-medium {
+//   @include heading-medium;
+//   font-family: $display-font;
+//   margin-left: -1px;
+//   margin-bottom: 0;
+// }
 
-.ui-copy {
-  @include ui-copy;
-  font-family: $display-font-bold;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
+// .heading-large {
+//   @include heading-large;
+//   font-family: $display-font;
+//   margin-left: -2px;
+//   margin-bottom: 0;
+// }
 
-.tabular-numbers {
-  font-variant-numeric: tabular-nums;
-}
+// .heading-extra-large {
+//   @include heading-extra-large;
+//   font-family: $display-font;
+//   margin-left: -4px;
+//   margin-bottom: 0;
+//   max-width: 800px;
+// }
 
+// .ui-copy {
+//   @include ui-copy;
+//   font-family: $display-font-bold;
+//   text-transform: uppercase;
+//   letter-spacing: 1px;
+// }
 
-h1 {
-  @include heading-large;
-  font-family: $display-font;
-  margin-bottom: 0.5em;
-
-  &.extra-large {
-    @include heading-extra-large;
-  }
-}
-
-h2 {
-  @include heading-medium;
-  font-family: $display-font;
-  margin-bottom: 1em;
-}
-
-h3 {
-  @include heading-small;
-  font-family: $display-font;
-  margin-bottom: 0.5em;
-} 
-
-p {
-  @include body-copy-medium;
-  margin-bottom: 1em;
-  max-width: 740px;
-}
-
-ul {
-  margin-left: 20px;
-  margin-bottom: 1em;
-}
-
-ul ul {
-  margin-bottom: 0;
-}
-
-a {
-  color: $brand-navy;
-  text-decoration: underline;
-
-  &.no-underline {
-    text-decoration: none;
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-}
-
-img {
-  width: 100%;
-}
-
-.small {
-  @include body-copy-small;
-}
-
-.bottom-border {
-  border-bottom: 1px solid $brand-navy-10;
-}
-
-.top-border {
-  border-top: 1px solid $brand-navy-10;
-}
-
-.bottom-border-2 {
-  border-bottom: 2px solid $brand-navy-10;
-}
-
-.pipeline-item {
-  position: relative;
-
-  .phase-label {
-    position: absolute;
-    right: 0;
-    top: 4px;
-
-    @include media(desktop) {
-      top: 8px;
-    }
-  }
-}
+// .tabular-numbers {
+//   font-variant-numeric: tabular-nums;
+// }
 
 
-// vertical spacing - bottom
+// h1 {
+//   @include heading-large;
+//   font-family: $display-font;
+//   margin-bottom: 0.5em;
 
-.vertical-spacing-bottom-0-25 {
-  @include vertical-gutter-behaviour($direction: 'bottom', $gutter-count-mobile: 0.5, $gutter-count-tablet: 0.5, $gutter-count-desktop: 0.25, $gutter-count-desktop-large: 0.25, $gutter-count-cinema: 0.25);
-}
+//   &.extra-large {
+//     @include heading-extra-large;
+//   }
+// }
 
-.vertical-spacing-bottom-0-5 {
-  @include vertical-gutter-behaviour($direction: 'bottom', $gutter-count-mobile: 1, $gutter-count-tablet: 1, $gutter-count-desktop: 0.5, $gutter-count-desktop-large: 0.5, $gutter-count-cinema: 0.5);
-}
+// h2 {
+//   @include heading-medium;
+//   font-family: $display-font;
+//   margin-bottom: 1em;
+// }
 
-.vertical-spacing-bottom {
-  @include vertical-gutter-behaviour($direction: 'bottom', $gutter-count-mobile: 2, $gutter-count-tablet: 2, $gutter-count-desktop: 1, $gutter-count-desktop-large: 1, $gutter-count-cinema: 1);
-}
+// h3 {
+//   @include heading-small;
+//   font-family: $display-font;
+//   margin-bottom: 0.5em;
+// } 
 
-.vertical-spacing-bottom-2 {
-  @include vertical-gutter-behaviour($direction: 'bottom', $gutter-count-mobile: 4, $gutter-count-tablet: 4, $gutter-count-desktop: 2, $gutter-count-desktop-large: 2, $gutter-count-cinema: 2);
-}
+// p {
+//   @include body-copy-medium;
+//   margin-bottom: 1em;
+//   max-width: 740px;
+// }
 
-.vertical-spacing-bottom-3 {
-  @include vertical-gutter-behaviour($direction: 'bottom', $gutter-count-mobile: 6, $gutter-count-tablet: 6, $gutter-count-desktop: 3, $gutter-count-desktop-large: 3, $gutter-count-cinema: 3);
-}
+// ul {
+//   margin-left: 20px;
+//   margin-bottom: 1em;
+// }
 
-.vertical-spacing-bottom-4 {
-  @include vertical-gutter-behaviour($direction: 'bottom', $gutter-count-mobile: 8, $gutter-count-tablet: 8, $gutter-count-desktop: 4, $gutter-count-desktop-large: 4, $gutter-count-cinema: 4);
-}
+// ul ul {
+//   margin-bottom: 0;
+// }
+
+// a {
+//   color: $brand-navy;
+//   text-decoration: underline;
+
+//   &.no-underline {
+//     text-decoration: none;
+
+//     &:hover {
+//       text-decoration: underline;
+//     }
+//   }
+// }
+
+// img {
+//   width: 100%;
+// }
+
+// .small {
+//   @include body-copy-small;
+// }
+
+// .bottom-border {
+//   border-bottom: 1px solid $brand-navy-10;
+// }
+
+// .top-border {
+//   border-top: 1px solid $brand-navy-10;
+// }
+
+// .bottom-border-2 {
+//   border-bottom: 2px solid $brand-navy-10;
+// }
+
+// .pipeline-item {
+//   position: relative;
+
+//   .phase-label {
+//     position: absolute;
+//     right: 0;
+//     top: 4px;
+
+//     @include media(desktop) {
+//       top: 8px;
+//     }
+//   }
+// }
 
 
-// vertical spacing - top
+// // vertical spacing - bottom
 
-.vertical-spacing-top-0-25 {
-  @include vertical-gutter-behaviour($direction: 'top', $gutter-count-mobile: 0.5, $gutter-count-tablet: 0.5, $gutter-count-desktop: 0.25, $gutter-count-desktop-large: 0.25, $gutter-count-cinema: 0.25);
-}
+// .vertical-spacing-bottom-0-25 {
+//   @include vertical-gutter-behaviour($direction: 'bottom', $gutter-count-mobile: 0.5, $gutter-count-tablet: 0.5, $gutter-count-desktop: 0.25, $gutter-count-desktop-large: 0.25, $gutter-count-cinema: 0.25);
+// }
 
-.vertical-spacing-top-0-5 {
-  @include vertical-gutter-behaviour($direction: 'top', $gutter-count-mobile: 1, $gutter-count-tablet: 1, $gutter-count-desktop: 0.5, $gutter-count-desktop-large: 0.5, $gutter-count-cinema: 0.5);
-}
+// .vertical-spacing-bottom-0-5 {
+//   @include vertical-gutter-behaviour($direction: 'bottom', $gutter-count-mobile: 1, $gutter-count-tablet: 1, $gutter-count-desktop: 0.5, $gutter-count-desktop-large: 0.5, $gutter-count-cinema: 0.5);
+// }
 
-.vertical-spacing-top {
-  @include vertical-gutter-behaviour($direction: 'top', $gutter-count-mobile: 2, $gutter-count-tablet: 2, $gutter-count-desktop: 1, $gutter-count-desktop-large: 1, $gutter-count-cinema: 1);
-}
+// .vertical-spacing-bottom {
+//   @include vertical-gutter-behaviour($direction: 'bottom', $gutter-count-mobile: 2, $gutter-count-tablet: 2, $gutter-count-desktop: 1, $gutter-count-desktop-large: 1, $gutter-count-cinema: 1);
+// }
 
-.vertical-spacing-top-2 {
-  @include vertical-gutter-behaviour($direction: 'top', $gutter-count-mobile: 4, $gutter-count-tablet: 4, $gutter-count-desktop: 2, $gutter-count-desktop-large: 2, $gutter-count-cinema: 2);
-}
+// .vertical-spacing-bottom-2 {
+//   @include vertical-gutter-behaviour($direction: 'bottom', $gutter-count-mobile: 4, $gutter-count-tablet: 4, $gutter-count-desktop: 2, $gutter-count-desktop-large: 2, $gutter-count-cinema: 2);
+// }
 
-// .proto-* classes only used to layout things in this styles prototype.
-// these can be ignored when making new things.
+// .vertical-spacing-bottom-3 {
+//   @include vertical-gutter-behaviour($direction: 'bottom', $gutter-count-mobile: 6, $gutter-count-tablet: 6, $gutter-count-desktop: 3, $gutter-count-desktop-large: 3, $gutter-count-cinema: 3);
+// }
 
-.proto-style-block {
-  display: block;
-  margin-bottom: $gutter * 8;
-}
-.proto-spacer {
-  margin-bottom: $gutter * 2;
-  @include media(desktop) {
-    margin-bottom: $gutter-desktop;
-  }
+// .vertical-spacing-bottom-4 {
+//   @include vertical-gutter-behaviour($direction: 'bottom', $gutter-count-mobile: 8, $gutter-count-tablet: 8, $gutter-count-desktop: 4, $gutter-count-desktop-large: 4, $gutter-count-cinema: 4);
+// }
 
-  &.space-by-0-5 {
-    margin-bottom: $gutter;
-    @include media(desktop) {
-      margin-bottom: $gutter-desktop * 0.5;
-    }
-  }
-  &.space-by-2 {
-    margin-bottom: $gutter * 3;
-    @include media(desktop) {
-      margin-bottom: $gutter-desktop * 2;
-    }
-  }
-}
-.proto-background {
-  min-height: 140px;
-  background-color: #f5f5f5;
 
-  &.tall {
-    min-height: 500px;
-  }
-}
+// // vertical spacing - top
 
-.proto-pipeline-phase {
+// .vertical-spacing-top-0-25 {
+//   @include vertical-gutter-behaviour($direction: 'top', $gutter-count-mobile: 0.5, $gutter-count-tablet: 0.5, $gutter-count-desktop: 0.25, $gutter-count-desktop-large: 0.25, $gutter-count-cinema: 0.25);
+// }
 
-  @include column-half;
-  margin-bottom: $gutter;
+// .vertical-spacing-top-0-5 {
+//   @include vertical-gutter-behaviour($direction: 'top', $gutter-count-mobile: 1, $gutter-count-tablet: 1, $gutter-count-desktop: 0.5, $gutter-count-desktop-large: 0.5, $gutter-count-cinema: 0.5);
+// }
+
+// .vertical-spacing-top {
+//   @include vertical-gutter-behaviour($direction: 'top', $gutter-count-mobile: 2, $gutter-count-tablet: 2, $gutter-count-desktop: 1, $gutter-count-desktop-large: 1, $gutter-count-cinema: 1);
+// }
+
+// .vertical-spacing-top-2 {
+//   @include vertical-gutter-behaviour($direction: 'top', $gutter-count-mobile: 4, $gutter-count-tablet: 4, $gutter-count-desktop: 2, $gutter-count-desktop-large: 2, $gutter-count-cinema: 2);
+// }
+
+// // .proto-* classes only used to layout things in this styles prototype.
+// // these can be ignored when making new things.
+
+// .proto-style-block {
+//   display: block;
+//   margin-bottom: $gutter * 8;
+// }
+// .proto-spacer {
+//   margin-bottom: $gutter * 2;
+//   @include media(desktop) {
+//     margin-bottom: $gutter-desktop;
+//   }
+
+//   &.space-by-0-5 {
+//     margin-bottom: $gutter;
+//     @include media(desktop) {
+//       margin-bottom: $gutter-desktop * 0.5;
+//     }
+//   }
+//   &.space-by-2 {
+//     margin-bottom: $gutter * 3;
+//     @include media(desktop) {
+//       margin-bottom: $gutter-desktop * 2;
+//     }
+//   }
+// }
+// .proto-background {
+//   min-height: 140px;
+//   background-color: #f5f5f5;
+
+//   &.tall {
+//     min-height: 500px;
+//   }
+// }
+
+// .proto-pipeline-phase {
+
+//   @include column-half;
+//   margin-bottom: $gutter;
   
-  @include media(tablet) {
-    @include column-one-third;
-    margin-bottom: $gutter-tablet;
-  }
+//   @include media(tablet) {
+//     @include column-one-third;
+//     margin-bottom: $gutter-tablet;
+//   }
 
-  @include media(desktop) {
-    @include column-one-sixth;
-    margin-bottom: $gutter-desktop;
-  }
-}
+//   @include media(desktop) {
+//     @include column-one-sixth;
+//     margin-bottom: $gutter-desktop;
+//   }
+// }
 
-.phase-title {
-  @include body-copy-medium;
-  display: inline-block;
-  width: 100%;
-  border-top: 10px solid $alpha;
-  padding-top: 5px;
+// .phase-title {
+//   @include body-copy-medium;
+//   display: inline-block;
+//   width: 100%;
+//   border-top: 10px solid $alpha;
+//   padding-top: 5px;
 
-  &.is-alpha {
-    border-color: $alpha;
-  }
+//   &.is-alpha {
+//     border-color: $alpha;
+//   }
 
-  &.is-beta {
-    border-color: $beta;
-  }
+//   &.is-beta {
+//     border-color: $beta;
+//   }
 
-  &.is-discovery {
-    border-color: $discovery;
-  }
+//   &.is-discovery {
+//     border-color: $discovery;
+//   }
 
-  &.is-idea {
-    border-color: $idea;
-  }
+//   &.is-idea {
+//     border-color: $idea;
+//   }
   
-  &.is-live {
-    border-color: $live;
-  }
+//   &.is-live {
+//     border-color: $live;
+//   }
 
-  &.is-scoping {
-    border-color: $scoping;
-  }
-}
+//   &.is-scoping {
+//     border-color: $scoping;
+//   }
+// }
 
-.phase-count {
-  display: inline-block;
-  margin-left: 1px;
-  width: 100%;
+// .phase-count {
+//   display: inline-block;
+//   margin-left: 1px;
+//   width: 100%;
 
-  a {
-    text-decoration: none;
-  }
-}
+//   a {
+//     text-decoration: none;
+//   }
+// }
 
-.state-label {
-  @include body-copy-small;
-  display: block;
-  margin-left: 16px;
+// .state-label {
+//   @include body-copy-small;
+//   display: block;
+//   margin-left: 16px;
 
-  &:before {
-    content:'';
-    display: block;
-    width: 10px;
-    height: 10px;
-    border-radius: 5px;
-    position: relative;
-    top: 16px;
-    left: -16px;
-  }
+//   &:before {
+//     content:'';
+//     display: block;
+//     width: 10px;
+//     height: 10px;
+//     border-radius: 5px;
+//     position: relative;
+//     top: 16px;
+//     left: -16px;
+//   }
 
-  &.active {
-    &:before {
-      background-color: $active-state;
-    }
-  }
+//   &.active {
+//     &:before {
+//       background-color: $active-state;
+//     }
+//   }
 
-  &.inactive {
-    &:before {
-      background-color: white;
-      border: 1px solid $inactive-state;
-      width: 8px;
-      height: 8px;
-    }
-  }
-}
+//   &.inactive {
+//     &:before {
+//       background-color: white;
+//       border: 1px solid $inactive-state;
+//       width: 8px;
+//       height: 8px;
+//     }
+//   }
+// }
