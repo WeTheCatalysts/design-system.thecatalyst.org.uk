@@ -15,58 +15,40 @@
 		"oAP": "\/.gitignore",
 		"oF": 0
 		},
-	"\/assets\/fonts\/Inter-Black-slnt=0.ttf": {
+	"\/assets\/fonts\/Inter-Regular.ttf": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/assets\/fonts\/Inter-Black-slnt=0.ttf",
+		"oAP": "\/assets\/fonts\/Inter-Regular.ttf",
 		"oF": 0
 		},
-	"\/assets\/fonts\/Inter-Bold-slnt=0.ttf": {
+	"\/assets\/fonts\/Inter-Regular.woff": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/assets\/fonts\/Inter-Bold-slnt=0.ttf",
+		"oAP": "\/assets\/fonts\/Inter-Regular.woff",
 		"oF": 0
 		},
-	"\/assets\/fonts\/Inter-ExtraBold-slnt=0.ttf": {
+	"\/assets\/fonts\/Inter-Regular.woff2": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/assets\/fonts\/Inter-ExtraBold-slnt=0.ttf",
+		"oAP": "\/assets\/fonts\/Inter-Regular.woff2",
 		"oF": 0
 		},
-	"\/assets\/fonts\/Inter-ExtraLight-slnt=0.ttf": {
+	"\/assets\/fonts\/Inter-Semi-Bold.ttf": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/assets\/fonts\/Inter-ExtraLight-slnt=0.ttf",
+		"oAP": "\/assets\/fonts\/Inter-Semi-Bold.ttf",
 		"oF": 0
 		},
-	"\/assets\/fonts\/Inter-Light-slnt=0.ttf": {
+	"\/assets\/fonts\/Inter-Semi-Bold.woff": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/assets\/fonts\/Inter-Light-slnt=0.ttf",
+		"oAP": "\/assets\/fonts\/Inter-Semi-Bold.woff",
 		"oF": 0
 		},
-	"\/assets\/fonts\/Inter-Medium-slnt=0.ttf": {
+	"\/assets\/fonts\/Inter-Semi-Bold.woff2": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/assets\/fonts\/Inter-Medium-slnt=0.ttf",
-		"oF": 0
-		},
-	"\/assets\/fonts\/Inter-Regular-slnt=0.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/assets\/fonts\/Inter-Regular-slnt=0.ttf",
-		"oF": 0
-		},
-	"\/assets\/fonts\/Inter-SemiBold-slnt=0.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/assets\/fonts\/Inter-SemiBold-slnt=0.ttf",
-		"oF": 0
-		},
-	"\/assets\/fonts\/Inter-Thin-slnt=0.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/assets\/fonts\/Inter-Thin-slnt=0.ttf",
+		"oAP": "\/assets\/fonts\/Inter-Semi-Bold.woff2",
 		"oF": 0
 		},
 	"\/assets\/fonts\/LexendDeca-Regular.ttf": {
@@ -75,22 +57,16 @@
 		"oAP": "\/assets\/fonts\/LexendDeca-Regular.ttf",
 		"oF": 0
 		},
-	"\/assets\/fonts\/Questrial-Regular.ttf": {
+	"\/assets\/fonts\/LexendDeca-Regular.woff": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/assets\/fonts\/Questrial-Regular.ttf",
+		"oAP": "\/assets\/fonts\/LexendDeca-Regular.woff",
 		"oF": 0
 		},
-	"\/assets\/fonts\/Roboto-Medium.ttf": {
+	"\/assets\/fonts\/LexendDeca-Regular.woff2": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/assets\/fonts\/Roboto-Medium.ttf",
-		"oF": 0
-		},
-	"\/assets\/fonts\/Roboto-Regular.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/assets\/fonts\/Roboto-Regular.ttf",
+		"oAP": "\/assets\/fonts\/LexendDeca-Regular.woff2",
 		"oF": 0
 		},
 	"\/assets\/images\/CAT_logo_cent_black .svg": {

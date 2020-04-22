@@ -111,23 +111,26 @@ table {
 .column-one-sixth {
   width: 16.666667%; }
 
+/* lexend-deca-regular - latin */
 @font-face {
   font-family: 'LexendDeca-Regular';
-  font-weight: 400;
   font-style: normal;
-  src: url("../fonts/LexendDeca-Regular.ttf") format("truetype"); }
+  font-weight: 400;
+  src: url("../fonts/LexendDeca-Regular.woff2") format("woff2"), url("../fonts/LexendDeca-Regular.woff") format("woff"), url("../fonts/LexendDeca-Regular.ttf") format("truetype"); }
 
+/* inter-regular - latin */
 @font-face {
   font-family: 'Inter-Regular';
-  font-weight: 400;
   font-style: normal;
-  src: url("../fonts/Inter-Regular-slnt=0.ttf") format("truetype"); }
+  font-weight: 400;
+  src: url("../fonts/Inter-Regular.woff2") format("woff2"), url("../fonts/Inter-Regular.woff") format("woff"), url("../fonts/Inter-Regular.ttf") format("truetype"); }
 
+/* inter-600 - latin */
 @font-face {
   font-family: 'Inter-Semi-Bold';
-  font-weight: 400;
   font-style: normal;
-  src: url("../fonts/Inter-SemiBold-slnt=0.ttf") format("truetype"); }
+  font-weight: 600;
+  src: url("../fonts/Inter-Semi-Bold.woff2") format("woff2"), url("../fonts/Inter-Semi-Bold.woff") format("woff"), url("../fonts/Inter-Semi-Bold.ttf") format("truetype"); }
 
 input.button,
 a.button,
@@ -166,7 +169,7 @@ a.button,
   a.button:hover,
   .button:hover {
     transition: background-color 0.2s ease;
-    background-color: #019B59;
+    background-color: rgba(10, 0, 57, 0.75);
     border: none;
     color: #fff;
     cursor: pointer;
@@ -207,10 +210,10 @@ ul.horizontal-list li {
   text-align: center; }
   .phase-label.is-alpha {
     color: #fff;
-    background-color: #D82B90; }
+    background-color: #D7288E; }
   .phase-label.is-beta {
     color: #fff;
-    background-color: #C75300; }
+    background-color: #C25400; }
   .phase-label.is-discovery {
     color: #fff;
     background-color: #0C9DEF; }
@@ -243,15 +246,13 @@ ul.vertical-list {
   .header .header-logo {
     position: absolute;
     top: 20px; }
+    .header .header-logo h1 {
+      display: none; }
     .header .header-logo .logo {
       height: 24px; }
 
 .main {
-  min-height: 700px;
-  padding-top: 15px; }
-  @media screen and (min-width: 960px) {
-    .main {
-      padding-top: 22.5px; } }
+  min-height: 700px; }
 
 .primary-navigation {
   display: none; }
@@ -442,15 +443,14 @@ h2 {
       letter-spacing: -0.006125em; } }
 
 h3 {
-  font-feature-settings: "salt" on;
-  font-size: 24px;
-  line-height: 34px;
-  font-family: "LexendDeca-Regular", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin-bottom: 0.5em; }
+  font-size: 16px;
+  line-height: 22px;
+  font-family: "Inter-Semi-Bold", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 1em; }
   @media screen and (min-width: 600px) {
     h3 {
-      font-size: 27px;
-      line-height: 30px; } }
+      font-size: 18px;
+      line-height: 27px; } }
 
 p {
   font-size: 16px;
@@ -462,7 +462,13 @@ p {
       font-size: 18px;
       line-height: 27px; } }
 
-ul {
+strong {
+  font-family: "Inter-Semi-Bold", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+em {
+  font-style: italic; }
+
+ul, ol {
   margin-left: 20px;
   margin-bottom: 1em; }
 
@@ -479,6 +485,53 @@ a {
 
 img {
   width: 100%; }
+
+.contains-markdown ul, .contains-markdown ol {
+  margin-bottom: 30px; }
+  @media screen and (min-width: 600px) {
+    .contains-markdown ul, .contains-markdown ol {
+      margin-bottom: 60px; } }
+  @media screen and (min-width: 960px) {
+    .contains-markdown ul, .contains-markdown ol {
+      margin-bottom: 45px; } }
+  @media screen and (min-width: 1800px) {
+    .contains-markdown ul, .contains-markdown ol {
+      margin-bottom: 60px; } }
+
+.contains-markdown h1 + h3,
+.contains-markdown h2 + h3,
+.contains-markdown p + h3 {
+  margin-top: 30px; }
+  @media screen and (min-width: 600px) {
+    .contains-markdown h1 + h3,
+    .contains-markdown h2 + h3,
+    .contains-markdown p + h3 {
+      margin-top: 60px; } }
+  @media screen and (min-width: 960px) {
+    .contains-markdown h1 + h3,
+    .contains-markdown h2 + h3,
+    .contains-markdown p + h3 {
+      margin-top: 45px; } }
+  @media screen and (min-width: 1800px) {
+    .contains-markdown h1 + h3,
+    .contains-markdown h2 + h3,
+    .contains-markdown p + h3 {
+      margin-top: 60px; } }
+
+.contains-markdown p + h2 {
+  margin-top: 60px; }
+  @media screen and (min-width: 600px) {
+    .contains-markdown p + h2 {
+      margin-top: 120px; } }
+  @media screen and (min-width: 960px) {
+    .contains-markdown p + h2 {
+      margin-top: 90px; } }
+  @media screen and (min-width: 1800px) {
+    .contains-markdown p + h2 {
+      margin-top: 120px; } }
+
+.contains-markdown li {
+  margin-bottom: 5px; }
 
 .body-copy-small {
   font-size: 14px;
@@ -519,7 +572,8 @@ img {
   font-size: 27px;
   line-height: 30px;
   font-family: "LexendDeca-Regular", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin-left: -1px; }
+  margin-left: -1px;
+  max-width: 740px; }
   @media screen and (min-width: 600px) {
     .heading-medium {
       font-size: 36px;
@@ -532,7 +586,8 @@ img {
   line-height: 40px;
   letter-spacing: -0.0125em;
   font-family: "LexendDeca-Regular", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin-left: -2px; }
+  margin-left: -2px;
+  max-width: 740px; }
   @media screen and (min-width: 960px) {
     .heading-large {
       font-size: 48px;
@@ -664,16 +719,16 @@ img {
   line-height: 22px;
   display: inline-block;
   width: 100%;
-  border-top: 10px solid #D82B90;
+  border-top: 10px solid #D7288E;
   padding-top: 5px; }
   @media screen and (min-width: 600px) {
     .phase-title {
       font-size: 18px;
       line-height: 27px; } }
   .phase-title.is-alpha {
-    border-color: #D82B90; }
+    border-color: #D7288E; }
   .phase-title.is-beta {
-    border-color: #C75300; }
+    border-color: #C25400; }
   .phase-title.is-discovery {
     border-color: #0C9DEF; }
   .phase-title.is-idea {
