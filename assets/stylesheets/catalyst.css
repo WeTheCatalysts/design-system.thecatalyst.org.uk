@@ -565,7 +565,8 @@ img {
   font-feature-settings: "salt" on;
   font-size: 24px;
   line-height: 34px;
-  font-family: "LexendDeca-Regular", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: "LexendDeca-Regular", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  max-width: 740px; }
   @media screen and (min-width: 600px) {
     .heading-small {
       font-size: 27px;
