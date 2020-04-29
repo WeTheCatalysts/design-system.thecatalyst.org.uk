@@ -462,7 +462,8 @@ p {
       font-size: 18px;
       line-height: 27px; } }
 
-strong {
+strong,
+.strong {
   font-family: "Inter-Semi-Bold", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 em {
