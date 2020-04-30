@@ -567,7 +567,7 @@ img {
   font-size: 24px;
   line-height: 32px;
   font-family: "LexendDeca-Regular", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  max-width: 740px; }
+  max-width: 760px; }
   @media screen and (min-width: 600px) {
     .heading-small {
       font-size: 27px;
@@ -579,7 +579,7 @@ img {
   line-height: 30px;
   font-family: "LexendDeca-Regular", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-left: -1px;
-  max-width: 740px; }
+  max-width: 760px; }
   @media screen and (min-width: 600px) {
     .heading-medium {
       font-size: 36px;
@@ -593,7 +593,7 @@ img {
   letter-spacing: -0.0125em;
   font-family: "LexendDeca-Regular", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-left: -2px;
-  max-width: 740px; }
+  max-width: 760px; }
   @media screen and (min-width: 960px) {
     .heading-large {
       font-size: 48px;
