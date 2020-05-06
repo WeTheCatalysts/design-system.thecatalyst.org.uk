@@ -309,6 +309,18 @@ ul.vertical-list {
     .vertical-spacing-bottom {
       margin-bottom: 60px; } }
 
+.vertical-spacing-bottom-1-5 {
+  margin-bottom: 45px; }
+  @media screen and (min-width: 600px) {
+    .vertical-spacing-bottom-1-5 {
+      margin-bottom: 90px; } }
+  @media screen and (min-width: 960px) {
+    .vertical-spacing-bottom-1-5 {
+      margin-bottom: 67.5px; } }
+  @media screen and (min-width: 1800px) {
+    .vertical-spacing-bottom-1-5 {
+      margin-bottom: 90px; } }
+
 .vertical-spacing-bottom-2 {
   margin-bottom: 60px; }
   @media screen and (min-width: 600px) {
@@ -380,6 +392,18 @@ ul.vertical-list {
   @media screen and (min-width: 1800px) {
     .vertical-spacing-top {
       margin-top: 60px; } }
+
+.vertical-spacing-top-1-5 {
+  margin-top: 45px; }
+  @media screen and (min-width: 600px) {
+    .vertical-spacing-top-1-5 {
+      margin-top: 90px; } }
+  @media screen and (min-width: 960px) {
+    .vertical-spacing-top-1-5 {
+      margin-top: 67.5px; } }
+  @media screen and (min-width: 1800px) {
+    .vertical-spacing-top-1-5 {
+      margin-top: 90px; } }
 
 .vertical-spacing-top-2 {
   margin-top: 60px; }
@@ -542,6 +566,10 @@ img {
 .contains-markdown li {
   margin-bottom: 5px; }
 
+.body-copy-smallest {
+  font-size: 14px;
+  line-height: 24px; }
+
 .body-copy-small {
   font-size: 14px;
   line-height: 24px; }
@@ -650,6 +678,17 @@ img {
 
 .bottom-border-2 {
   border-bottom: 2px solid rgba(10, 0, 57, 0.1); }
+
+.top-border-2 {
+  border-top: 2px solid rgba(10, 0, 57, 0.1); }
+  .top-border-2.heavy-border {
+    border-top-color: #0a0039; }
+
+.desktop-only {
+  display: none; }
+  @media screen and (min-width: 960px) {
+    .desktop-only {
+      display: inline; } }
 
 .logo {
   display: block;
