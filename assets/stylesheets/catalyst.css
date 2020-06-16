@@ -135,15 +135,15 @@ table {
 input.button,
 a.button,
 .button {
-  transition: background-color 0.4s ease;
-  font-size: 16px;
-  line-height: 22px;
+  font-size: 14px;
+  line-height: 24px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px 0px;
   font-family: "Inter-Semi-Bold", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  padding: 14px 17px 12px 17px;
+  padding: 12px 17px 10px 17px;
   font-family: "Inter-Semi-Bold", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #0a0039;
   border: none;
-  border-radius: 25px;
+  border-radius: 5px;
   color: #fff;
   display: inline-block;
   width: auto;
@@ -151,25 +151,39 @@ a.button,
   -webkit-border-radius: none;
   text-align: center;
   text-decoration: none;
+  transition: background-color 0.2s ease;
   width: 100%; }
   @media screen and (min-width: 600px) {
     input.button,
     a.button,
     .button {
-      font-size: 18px;
-      line-height: 27px; } }
+      font-size: 16px;
+      line-height: 22px; } }
   @media screen and (min-width: 600px) {
     input.button,
     a.button,
     .button {
-      border-radius: 25px;
-      padding: 10px 40px 10px 40px;
+      border-radius: 5px;
+      padding: 12px 60px 12px 60px;
       width: auto; } }
+  input.button.secondary,
+  a.button.secondary,
+  .button.secondary {
+    background-color: rgba(10, 0, 57, 0.05);
+    box-shadow: rgba(0, 0, 0, 0.025) 0px 5px 15px 0px;
+    color: rgba(10, 0, 57, 0.75);
+    border: 1px solid rgba(10, 0, 57, 0.1); }
+    input.button.secondary:hover,
+    a.button.secondary:hover,
+    .button.secondary:hover {
+      border: 1px solid rgba(10, 0, 57, 0.1);
+      background-color: rgba(10, 0, 57, 0.1);
+      color: #0a0039; }
   input.button:hover,
   a.button:hover,
   .button:hover {
     transition: background-color 0.2s ease;
-    background-color: rgba(10, 0, 57, 0.75);
+    background-color: rgba(10, 0, 57, 0.85);
     border: none;
     color: #fff;
     cursor: pointer;
@@ -234,7 +248,7 @@ ul.vertical-list {
 .footer {
   padding: 30px 0;
   margin-top: 2em;
-  background-color: #f5f5f5; }
+  background-color: rgba(10, 0, 57, 0.05); }
 
 .header {
   width: 100%;
@@ -252,7 +266,10 @@ ul.vertical-list {
       height: 24px; }
 
 .main {
-  min-height: 700px; }
+  min-height: 600px; }
+  @media screen and (min-width: 960px) {
+    .main {
+      min-height: 840px; } }
 
 .primary-navigation {
   display: none; }
@@ -272,6 +289,18 @@ ul.vertical-list {
         line-height: 22px; } }
     .primary-navigation a.is-active, .primary-navigation a:hover {
       text-decoration: underline; }
+
+.vertical-spacing-bottom-0 {
+  margin-bottom: 0px; }
+  @media screen and (min-width: 600px) {
+    .vertical-spacing-bottom-0 {
+      margin-bottom: 0px; } }
+  @media screen and (min-width: 960px) {
+    .vertical-spacing-bottom-0 {
+      margin-bottom: 0px; } }
+  @media screen and (min-width: 1800px) {
+    .vertical-spacing-bottom-0 {
+      margin-bottom: 0px; } }
 
 .vertical-spacing-bottom-0-25 {
   margin-bottom: 7.5px; }
@@ -650,15 +679,15 @@ img {
       line-height: 82px; } }
 
 .ui-copy {
-  font-size: 16px;
-  line-height: 22px;
+  font-size: 14px;
+  line-height: 24px;
   font-family: "LexendDeca-Regular", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px; }
   @media screen and (min-width: 600px) {
     .ui-copy {
-      font-size: 18px;
-      line-height: 27px; } }
+      font-size: 16px;
+      line-height: 22px; } }
 
 .tabular-numbers {
   font-variant-numeric: tabular-nums; }
@@ -670,6 +699,10 @@ img {
     .small {
       font-size: 16px;
       line-height: 22px; } }
+
+.force-wrap {
+  overflow-wrap: break-word;
+  word-wrap: break-word; }
 
 .bottom-border {
   border-bottom: 1px solid rgba(10, 0, 57, 0.1); }
