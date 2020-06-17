@@ -315,7 +315,7 @@ ul.vertical-list {
       margin-bottom: 11.25px; } }
   @media screen and (min-width: 1800px) {
     .vertical-spacing-bottom-0-25 {
-      margin-bottom: 15px; } }
+      margin-bottom: 11.25px; } }
 
 .vertical-spacing-bottom-0-5 {
   margin-bottom: 15px; }
@@ -327,7 +327,7 @@ ul.vertical-list {
       margin-bottom: 22.5px; } }
   @media screen and (min-width: 1800px) {
     .vertical-spacing-bottom-0-5 {
-      margin-bottom: 30px; } }
+      margin-bottom: 22.5px; } }
 
 .vertical-spacing-bottom {
   margin-bottom: 30px; }
@@ -339,7 +339,7 @@ ul.vertical-list {
       margin-bottom: 45px; } }
   @media screen and (min-width: 1800px) {
     .vertical-spacing-bottom {
-      margin-bottom: 60px; } }
+      margin-bottom: 45px; } }
 
 .vertical-spacing-bottom-1-5 {
   margin-bottom: 45px; }
@@ -351,7 +351,7 @@ ul.vertical-list {
       margin-bottom: 67.5px; } }
   @media screen and (min-width: 1800px) {
     .vertical-spacing-bottom-1-5 {
-      margin-bottom: 90px; } }
+      margin-bottom: 67.5px; } }
 
 .vertical-spacing-bottom-2 {
   margin-bottom: 60px; }
@@ -363,7 +363,7 @@ ul.vertical-list {
       margin-bottom: 90px; } }
   @media screen and (min-width: 1800px) {
     .vertical-spacing-bottom-2 {
-      margin-bottom: 120px; } }
+      margin-bottom: 90px; } }
 
 .vertical-spacing-bottom-3 {
   margin-bottom: 90px; }
@@ -375,7 +375,7 @@ ul.vertical-list {
       margin-bottom: 135px; } }
   @media screen and (min-width: 1800px) {
     .vertical-spacing-bottom-3 {
-      margin-bottom: 180px; } }
+      margin-bottom: 135px; } }
 
 .vertical-spacing-bottom-4 {
   margin-bottom: 120px; }
@@ -387,7 +387,7 @@ ul.vertical-list {
       margin-bottom: 180px; } }
   @media screen and (min-width: 1800px) {
     .vertical-spacing-bottom-4 {
-      margin-bottom: 240px; } }
+      margin-bottom: 180px; } }
 
 .vertical-spacing-top-0-25 {
   margin-top: 7.5px; }
@@ -399,7 +399,7 @@ ul.vertical-list {
       margin-top: 11.25px; } }
   @media screen and (min-width: 1800px) {
     .vertical-spacing-top-0-25 {
-      margin-top: 15px; } }
+      margin-top: 11.25px; } }
 
 .vertical-spacing-top-0-5 {
   margin-top: 15px; }
@@ -411,7 +411,7 @@ ul.vertical-list {
       margin-top: 22.5px; } }
   @media screen and (min-width: 1800px) {
     .vertical-spacing-top-0-5 {
-      margin-top: 30px; } }
+      margin-top: 22.5px; } }
 
 .vertical-spacing-top {
   margin-top: 30px; }
@@ -423,7 +423,7 @@ ul.vertical-list {
       margin-top: 45px; } }
   @media screen and (min-width: 1800px) {
     .vertical-spacing-top {
-      margin-top: 60px; } }
+      margin-top: 45px; } }
 
 .vertical-spacing-top-1-5 {
   margin-top: 45px; }
@@ -435,7 +435,7 @@ ul.vertical-list {
       margin-top: 67.5px; } }
   @media screen and (min-width: 1800px) {
     .vertical-spacing-top-1-5 {
-      margin-top: 90px; } }
+      margin-top: 67.5px; } }
 
 .vertical-spacing-top-2 {
   margin-top: 60px; }
@@ -447,7 +447,7 @@ ul.vertical-list {
       margin-top: 90px; } }
   @media screen and (min-width: 1800px) {
     .vertical-spacing-top-2 {
-      margin-top: 120px; } }
+      margin-top: 90px; } }
 
 body {
   font-size: 16px;
@@ -554,7 +554,7 @@ img {
       margin-bottom: 45px; } }
   @media screen and (min-width: 1800px) {
     .contains-markdown ul, .contains-markdown ol {
-      margin-bottom: 60px; } }
+      margin-bottom: 45px; } }
 
 .contains-markdown h1 + h3,
 .contains-markdown h2 + h3,
@@ -574,7 +574,7 @@ img {
     .contains-markdown h1 + h3,
     .contains-markdown h2 + h3,
     .contains-markdown p + h3 {
-      margin-top: 60px; } }
+      margin-top: 45px; } }
 
 .contains-markdown p + h2,
 .contains-markdown ul + h2,
@@ -594,7 +594,7 @@ img {
     .contains-markdown p + h2,
     .contains-markdown ul + h2,
     .contains-markdown ol + h2 {
-      margin-top: 120px; } }
+      margin-top: 90px; } }
 
 .contains-markdown li {
   margin-bottom: 5px; }
