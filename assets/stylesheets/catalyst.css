@@ -142,7 +142,7 @@ a.button,
   padding: 12px 17px 10px 17px;
   font-family: "Inter-Semi-Bold", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #0a0039;
-  border: none;
+  border: 1px solid #0a0039;
   border-radius: 5px;
   color: #fff;
   display: inline-block;
@@ -184,11 +184,41 @@ a.button,
   .button:hover {
     transition: background-color 0.2s ease;
     background-color: rgba(10, 0, 57, 0.85);
-    border: none;
+    border: 1px solid rgba(10, 0, 57, 0.85);
     color: #fff;
     cursor: pointer;
     text-shadow: none;
     text-decoration: none; }
+
+.button-group {
+  overflow-x: auto;
+  white-space: nowrap; }
+  @media screen and (min-width: 600px) {
+    .button-group {
+      white-space: normal; } }
+  .button-group .button {
+    border-radius: 0;
+    margin: 0;
+    padding: 6px 16px;
+    background-color: rgba(10, 0, 57, 0.05);
+    box-shadow: rgba(0, 0, 0, 0.025) 0px 5px 15px 0px;
+    color: rgba(10, 0, 57, 0.75);
+    border: 1px solid rgba(10, 0, 57, 0.1);
+    width: auto; }
+    .button-group .button:hover {
+      border: 1px solid rgba(10, 0, 57, 0.1);
+      background-color: rgba(10, 0, 57, 0.1);
+      color: #0a0039; }
+    .button-group .button.active {
+      background-color: #0a0039;
+      border: 1px solid #0a0039;
+      color: #fff; }
+    .button-group .button:first-child {
+      border-radius: 19px 0px 0px 19px;
+      padding-left: 20px; }
+    .button-group .button:last-child {
+      border-radius: 0 19px 19px 0px;
+      padding-right: 20px; }
 
 ul.horizontal-list li {
   float: left;
