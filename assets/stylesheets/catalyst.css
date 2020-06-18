@@ -89,6 +89,18 @@ table {
       .grid-container [class*='column-'],
       .grid-container .grid-column {
         padding: 0 22.5px; } }
+  .grid-container.is-gutterless {
+    margin: 0 auto;
+    max-width: 1280px;
+    padding: 0; }
+    .grid-container.is-gutterless:after {
+      content: "";
+      display: table;
+      clear: both; }
+    .grid-container.is-gutterless [class*='column-'],
+    .grid-container.is-gutterless .grid-column {
+      float: left;
+      padding: 0; }
 
 .column-full-width {
   width: 100%; }
