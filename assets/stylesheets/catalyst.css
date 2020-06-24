@@ -284,11 +284,25 @@ ul.horizontal-list li {
     background-color: #E7F6FE;
     border: 1px solid #CEECFD; }
 
-ul.vertical-list {
+ul.vertical-list-navigation {
   margin-left: 0; }
-  ul.vertical-list li {
-    list-style: none;
-    padding: 4px 0; }
+  ul.vertical-list-navigation li {
+    list-style: none; }
+    ul.vertical-list-navigation li a {
+      font-size: 14px;
+      line-height: 24px;
+      border-bottom: 1px solid rgba(10, 0, 57, 0.05);
+      display: block;
+      padding: 6px 0 6px 12px;
+      text-decoration: none; }
+      @media screen and (min-width: 600px) {
+        ul.vertical-list-navigation li a {
+          font-size: 16px;
+          line-height: 22px; } }
+      ul.vertical-list-navigation li a:hover {
+        background-color: rgba(10, 0, 57, 0.05); }
+    ul.vertical-list-navigation li.is-active a {
+      background-color: rgba(10, 0, 57, 0.05); }
 
 .footer {
   padding: 30px 0;
