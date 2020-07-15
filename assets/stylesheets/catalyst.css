@@ -315,16 +315,25 @@ ul.vertical-list-navigation {
   top: 0;
   z-index: 99;
   border-top: 10px solid #09CA77;
-  background-color: #0a0039; }
+  background-color: #0a0039;
+  height: 60px;
+  border-top: none;
+  background-color: #fafafa;
+  position: fixed;
+  box-shadow: 0px 2px 2px rgba(10, 1, 57, 0.08); }
   .header .header-logo {
     position: absolute;
-    top: 30px; }
+    top: 30px;
+    top: 20px; }
     .header .header-logo h1 {
       display: none; }
     .header .header-logo .logo {
       height: 24px; }
+      .header .header-logo .logo path {
+        fill: #0a0039; }
 
 .main {
+  margin-top: 60px;
   min-height: 600px; }
   @media screen and (min-width: 960px) {
     .main {
@@ -339,15 +348,16 @@ ul.vertical-list-navigation {
   .primary-navigation a {
     font-size: 14px;
     line-height: 24px;
-    font-family: "Inter-Semi-Bold", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Inter-Regular", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #fff;
-    text-decoration: none; }
+    text-decoration: none;
+    color: #0a0039; }
     @media screen and (min-width: 600px) {
       .primary-navigation a {
         font-size: 16px;
         line-height: 22px; } }
     .primary-navigation a.is-active, .primary-navigation a:hover {
-      text-decoration: underline; }
+      border-bottom: 1px solid #0a0039; }
 
 .vertical-spacing-bottom-0 {
   margin-bottom: 0px; }
@@ -585,6 +595,9 @@ em {
 ul, ol {
   margin-left: 20px;
   margin-bottom: 1em; }
+  ul.no-bullets, ol.no-bullets {
+    margin-left: 0;
+    list-style: none; }
 
 li {
   max-width: 740px; }
